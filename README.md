@@ -1,2 +1,2 @@
 # Google Translate
-**credits:** [Julian Scheidsteger](https://github.com/natael/electron-es2015-boilerplate)
+**credits:** [Julian Scheidsteger](https://github.com/natael/electron-es2015-boilerplate) :green_heart:
