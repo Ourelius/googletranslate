@@ -1,5 +1,5 @@
-export default class Whoop {
+export default class Works {
   constructor() {
-    console.log('Hello from Whoop');
+    console.log('Works fine ...');
   }
 }

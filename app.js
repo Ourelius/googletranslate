@@ -1,5 +1,5 @@
 import electron from 'electron';
-import Whoop from './src/module.js';
+import Works from './src/module.js';
 
 const { app, BrowserWindow } = electron;
 
@@ -18,8 +18,7 @@ app.on('ready', () => {
     height: 600
   });
 
-  // whoop module.
-  const whoop = new Whoop();
+  const works = new Works();
 
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
