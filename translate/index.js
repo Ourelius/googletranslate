@@ -8,20 +8,18 @@ function master() {
   let lang = document.querySelector(".set-master").value; // stores master language to variable
 
   // triggers function
-  sendData(lang)
-		.then(function(json) {
-      console.log( 'master: ', lang );
-		});
+  sendData(lang);
 }
 
 
 // fetch example
-function geo( data ) {
+function geo( data, language ) {
   console.log('data output:', data);
+  console.log('master set to: ', language);
 }
 
-function sendData() {
+function sendData(lang) {
 	return fetch('http://api.open-notify.org/iss-now.json') // API Link
 		.then(res => res.json()) // fetch result to json
-		.then(json => geo(json)); // send json to another function
+		.then(json => geo(json, lang)); // send json to another function
 }
